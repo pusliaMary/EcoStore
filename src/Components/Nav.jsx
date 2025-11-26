@@ -7,6 +7,7 @@ import { getTotalPrice } from "../redux/cartSlice"
 import logo from '../assets/shop.jpg'
 import cart from '../assets/cart.png'
 import back from '../assets/back.jpg'
+import heart from '../assets/favour.gif'
 
 
 export const Nav = () => {
@@ -20,13 +21,16 @@ export const Nav = () => {
                     <a href={<About />}>About</a>
                     <a href={<AllCategories />}>Shop</a>
                 </div>
-                <img src={logo} alt="logo" width="150px" className="logo"/>
+                <a href=""><img src={logo} alt="logo" width="150px" className="logo"/></a>
 
-                <div className="upperCartTotal">
-                    
-                    <img className="cartIcon" width='70px' src={cart}/>
-                    <h3>TOTAL: ${totalPrice}</h3>
-                    
+                <div className="flexAround">
+                    <img className="cartIcon" width='70px' height='70px' src={heart} alt='icon'/>
+                    <div className="upperCartTotal">
+                        
+                        <img className="cartIcon" width='70px' src={cart} alt='icon'/>
+                        <h3>TOTAL: ${totalPrice}</h3>
+                        
+                    </div>
                 </div>
 
             </div>

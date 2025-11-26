@@ -6,6 +6,7 @@ import { Dishes } from './Components/DishesComponents/Dishes'
 import { useState, useEffect } from 'react'
 import { LoaderPage } from './Loader/LoaderPage'
 import { About } from './Components/About'
+import { Favourites } from './Components/Favourites/Favourites'
 
 
 function App() {
@@ -18,13 +19,14 @@ function App() {
   }, [])
 
   return (
-   <div className="App">
+   <div className="columnCenter">
 
       <Nav />
       <About />
       <AllCategories />
       <Dishes />
       <Cart />
+      <Favourites />
 
       {/* {loader && <LoaderPage />}
       <div className='block columnCenter'>

@@ -52,7 +52,7 @@ const dataDishes = [
 
     name: 'Foot wear',
 
-    category: 'OTHER'
+    category: 'OTHERS'
 
 },
 
