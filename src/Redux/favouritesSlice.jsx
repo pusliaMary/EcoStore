@@ -8,14 +8,13 @@ export const favouritesSlice = createSlice({
   reducers: {
     addItemToFavourites: (state, action) => {
         const timeId = new Date().getTime()
-        if (state.favouriteItems.find(item => item.id===id)) return
-        else { state.favouriteItems.push({
+         state.favouriteItems.push({
             id: timeId,
             productId: action.payload.product.id,
             quantity: action.payload.quantity,
             totalPrice: action.payload.quantity * action.payload.product.price,
             productImage: action.payload.product.img
-        })}
+        })
     },
     removeItemFromFavourites: (state, action) => {
         state.favouriteItems= state.favouriteItems.filter(item => item.id !== action.payload.favouriteItemId)

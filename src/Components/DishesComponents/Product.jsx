@@ -13,7 +13,7 @@ export const Product = ( {product} ) => {
     const dispatch = useDispatch()
        
     return (
-    <div className='columnCenter'>
+    <div className='columnCenter product'>
 
         <img className='img' src={`./${product.img}.jpg`} alt="pic" height="600px"/> 
         <h3>{product.name}</h3>
