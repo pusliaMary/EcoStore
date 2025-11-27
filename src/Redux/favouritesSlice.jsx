@@ -11,10 +11,10 @@ export const favouritesSlice = createSlice({
         if (state.favouriteItems.find(item => item.id===id)) return
         else { state.favouriteItems.push({
             id: timeId,
-            dishId: action.payload.dish.id,
+            productId: action.payload.product.id,
             quantity: action.payload.quantity,
-            totalPrice: action.payload.quantity * action.payload.dish.price,
-            dishImage: action.payload.dish.img
+            totalPrice: action.payload.quantity * action.payload.product.price,
+            productImage: action.payload.product.img
         })}
     },
     removeItemFromFavourites: (state, action) => {

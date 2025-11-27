@@ -12,7 +12,7 @@ export const Favourites = () => {
 
     return (<div className="columnCenter section">
         <div className="favouriteBlock">
-            <img className="cartIcon" width='70px' src={favour}/>
+            <img id='favour' className="cartIcon" width='70px' src={favour}/>
         
         </div>
         <div className="flexRow">

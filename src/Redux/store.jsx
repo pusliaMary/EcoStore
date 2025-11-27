@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import dishes from './dishesSlice'
+import products from './productsSlice'
 import cart from "./cartSlice"
 import favourites from "./favouritesSlice"
 
@@ -8,7 +8,7 @@ import favourites from "./favouritesSlice"
 
 export const store = configureStore ({
     reducer: {
-        dishes,
+        products,
         cart,
         favourites
         

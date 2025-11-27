@@ -1,19 +1,19 @@
-import dataDishes from "../../Data/DataDishes"
+import dataProducts from "../../Data/DataProducts"
 import { removeItemFromCart } from "../../redux/cartSlice"
 import { useDispatch } from "react-redux"
 
 
 export const CartItem = ({cartItem}) => {
     
-    const dishes = dataDishes.find(item => item.id === cartItem.dishId)
+    const products = dataProducts.find(item => item.id === cartItem.productId)
     const dispatch = useDispatch()
     
 
     return (<div className="columnCenter header">
-        <div className="cartDish">
-            <p>{dishes.name}</p>
-            <p>{cartItem.quantity} portion(s)</p>
-            <p>${dishes.price * cartItem.quantity}</p>
+        <div className="cartProduct">
+            <p>{products.name}</p>
+            <p>{cartItem.quantity} pc(s)</p>
+            <p>${products.price * cartItem.quantity}</p>
         </div>
                               
         <span className="removeItem" onClick={()=> dispatch (removeItemFromCart({cartItemId: cartItem.id}))}>

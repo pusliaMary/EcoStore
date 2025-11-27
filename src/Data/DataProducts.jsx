@@ -1,4 +1,4 @@
-const dataDishes = [
+const dataProducts = [
 
   {
 
@@ -99,4 +99,4 @@ const dataDishes = [
 }
 ]
 
-export default dataDishes;
+export default dataProducts;

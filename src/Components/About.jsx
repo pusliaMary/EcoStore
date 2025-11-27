@@ -1,6 +1,6 @@
 export const About = () => {
     return (
-        <div className="columnCenter section">
+        <div className="columnCenter" id="about">
             <h2>About</h2>
             <p className="par">It's true, one bag won't save the planet from plastic. One straw, one wet wipe... One cotton swab...<br />
             But there are 8 billion of us, 365 days a year. The population is growing at a catastrophic rate <br />

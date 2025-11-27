@@ -9,22 +9,33 @@ import cart from '../assets/cart.png'
 import back from '../assets/back.jpg'
 import heart from '../assets/favour.gif'
 
+import gsap from 'gsap'
+import { useGSAP } from "@gsap/react"
+
+gsap.registerPlugin()
+
 
 export const Nav = () => {
 
     const totalPrice = useSelector(getTotalPrice)
 
+    useGSAP(()=> {
+        gsap.from('.anchor', {y:-100, delay: 1, duration: 2, stagger:1, ease: 'cine', scale:1.2})
+        
+    })
+
     return (
         <div className="columnCenter">
             <div className="nav">
                 <div className="links">
-                    <a href={<About />}>About</a>
-                    <a href={<AllCategories />}>Shop</a>
+                    <a href='#about' className="anchor">About</a>
+                    <a href="#shop" className="anchor">Shop</a>
                 </div>
-                <a href=""><img src={logo} alt="logo" width="150px" className="logo"/></a>
+                
+                <img src={logo} alt="logo" width="150px" className="logo"/>
 
                 <div className="flexAround">
-                    <img className="cartIcon" width='70px' height='70px' src={heart} alt='icon'/>
+                    <a href="#favour"><img className="cartIcon" width='70px' height='70px' src={heart} alt='icon'/></a>
                     <div className="upperCartTotal">
                         
                         <img className="cartIcon" width='70px' src={cart} alt='icon'/>
@@ -34,7 +45,7 @@ export const Nav = () => {
                 </div>
 
             </div>
-            <img src={back} alt="logo" width="150px" className="back"/>
+            <img src={back} alt="nackPick" className="back"/>
 
     </div>
     )

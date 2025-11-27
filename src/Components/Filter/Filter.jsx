@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
-import { filterCategory, getSelectedCategory } from '../../redux/dishesSlice'
+import { filterCategory, getSelectedCategory } from '../../redux/productsSlice'
 
 
 export const Filter = ({category})=> {

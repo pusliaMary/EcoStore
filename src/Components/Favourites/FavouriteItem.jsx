@@ -1,4 +1,4 @@
-import dataDishes from "../../Data/DataDishes"
+import dataProducts from "../../Data/DataProducts"
 import { removeItemFromFavourites } from "../../redux/favouritesSlice"
 import { useDispatch } from "react-redux"
 
@@ -6,16 +6,16 @@ import { useDispatch } from "react-redux"
 
 export const FavouriteItem = ({favouriteItem}) => {
     
-    const dishes = dataDishes.find(item => item.id === favouriteItem.dishId)
+    const products = dataProducts.find(item => item.id === favouriteItem.productId)
     const dispatch = useDispatch()
     
 
     return (
     <div className="columnCenter">
-        <div className="favouriteDish">
-            <img className='img' src={`./${favouriteItem.dishImage}.jpg`} alt="pic" height="300px"/> 
-            <p>{dishes.name}</p>
-            <p>${dishes.price}</p>
+        <div className="favouriteProduct">
+            <img className='img' src={`./${favouriteItem.productImage}.jpg`} alt="pic" height="300px"/> 
+            <p>{products.name}</p>
+            <p>${products.price}</p>
         </div>
                               
         <span className="basket" onClick={()=> dispatch (removeItemFromFavourites({favouriteItemId: favouriteItem.id}))}>
