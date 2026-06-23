@@ -2,7 +2,7 @@
 import { useSelector } from 'react-redux'
 import dataProducts from '../../Data/DataProducts'
 import { Product } from './Product'
-import { getSelectedCategory } from '../../redux/productsSlice'
+import { getSelectedCategory } from '../../Redux/productsSlice'
 
 export const Products = () => {
 

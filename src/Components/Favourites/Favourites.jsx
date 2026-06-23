@@ -2,7 +2,7 @@ import { useSelector } from "react-redux"
 import { FavouriteItem } from "./FavouriteItem"
 
 import favour from '../../assets/favour.gif'
-import { getFavouriteItems } from "../../redux/favouritesSlice"
+import { getFavouriteItems } from "../../Redux/favouritesSlice"
 
 
 export const Favourites = () => {

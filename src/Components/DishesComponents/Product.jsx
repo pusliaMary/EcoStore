@@ -1,8 +1,8 @@
 import { useState } from "react"
 import { ChangeQuantity } from "../Cart/ChangeQuantity"
-import { addItemToCart } from "../../redux/cartSlice"
+import { addItemToCart } from "../../Redux/cartSlice"
 import { useDispatch } from "react-redux"
-import { addItemToFavourites } from "../../redux/favouritesSlice"
+import { addItemToFavourites } from "../../Redux/favouritesSlice"
 import heartStatic from '..//..//assets/heart.png'
 
 

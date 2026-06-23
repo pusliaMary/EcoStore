@@ -1,5 +1,5 @@
 import dataProducts from "../../Data/DataProducts"
-import { removeItemFromCart } from "../../redux/cartSlice"
+import { removeItemFromCart } from "../../Redux/cartSlice"
 import { useDispatch } from "react-redux"
 
 

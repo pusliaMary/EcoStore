@@ -1,5 +1,5 @@
 import dataProducts from "../../Data/DataProducts"
-import { removeItemFromFavourites } from "../../redux/favouritesSlice"
+import { removeItemFromFavourites } from "../../Redux/favouritesSlice"
 import { useDispatch } from "react-redux"
 
 
