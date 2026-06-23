@@ -3,7 +3,7 @@ import { AllCategories } from "./Filter/AllCategories"
 import { About } from "./About"
 
 import { useSelector } from "react-redux"
-import { getTotalPrice } from "../redux/cartSlice"
+import { getTotalPrice } from "../Redux/cartSlice"
 import logo from '../assets/shop.jpg'
 import cart from '../assets/cart.png'
 import back from '../assets/back.jpg'
